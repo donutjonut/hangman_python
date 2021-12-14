@@ -1,2 +1,2 @@
-# hangman_python
+# Python Hangman
 hangman - but in python 
