@@ -1,5 +1,6 @@
 import requests
 import random
+from game import *
 
 # generate a random word and store it as randomWord
 word_site = "https://www.mit.edu/~ecprice/wordlist.10000"
@@ -15,6 +16,8 @@ blank = []
 for i in range(len(word)):
     blank.append("_")
 
+    
+testUWU()
 #ask the user for input 6 times. each time if their input is equal to a character in the random word replace the blank string with it  
 deathCheck = 0
 ranCheck = False
