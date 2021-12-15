@@ -16,7 +16,7 @@ blank = []
 for i in range(len(word)):
     blank.append("_")
 
-    
+
 testUWU()
 #ask the user for input 6 times. each time if their input is equal to a character in the random word replace the blank string with it  
 deathCheck = 0
