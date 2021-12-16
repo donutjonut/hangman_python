@@ -10,8 +10,15 @@ blank = []
 for i in range(len(word)):
     blank.append("_")
 
-#ask the user for input 6 times. each time if their input is equal to a character in the random word replace the blank string with it  
-runGame(randomWord, word, blank)
+gameState = True
+while gameState:
+    runGame(randomWord, word, blank)
+    stateChanger = input("Would you like to play again?").lower()
+    if (stateChanger == "yes"):
+        gameState = True
+    elif(stateChanger == "no"):
+        gameState = False
+
 
 print("\nENDING: ")
 print(randomWord)

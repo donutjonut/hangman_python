@@ -8,7 +8,7 @@ def generateWord(): #generate a random word and return it
     randomWord = random.choice(WORDS).decode('utf-8')
     return randomWord
 
-def runGame(randomWord, word, blank):
+def runGame(randomWord, word, blank): #ask the user for input 6 times. each time if their input is equal to a character in the random word replace the blank string with it  
     deathCheck = 0
     ranCheck = False
     while(deathCheck < 6):
