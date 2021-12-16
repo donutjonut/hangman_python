@@ -1,5 +1,6 @@
 import requests
 import random
+import os
 from game import *
 
 randomWord = generateWord()
@@ -10,17 +11,25 @@ blank = []
 for i in range(len(word)):
     blank.append("_")
 
+welcomePlayer()
+
 gameState = True
 while gameState:
     runGame(randomWord, word, blank)
-    stateChanger = input("Would you like to play again?").lower()
+
+    clearScreen()
+    stateChanger = input("Would you like to play again? ").lower()
     if (stateChanger == "yes"):
         gameState = True
+        randomWord = generateWord()
+        word = list(randomWord)
+        blank = []
+        for i in range(len(word)):
+            blank.append("_")
+        clearScreen()
     elif(stateChanger == "no"):
         gameState = False
 
-
 print("\nENDING: ")
 print(randomWord)
-print(deathCheck)
 print(blank)
