@@ -11,7 +11,7 @@ def generateWord(): #generate a random word and return it
     WORDS = response.content.splitlines()
     randomWord = random.choice(WORDS).decode('utf-8')
     return randomWord
-    
+
 def checkDone(randomWord, blank):
     count = 0
     for i in range(len(randomWord)):
