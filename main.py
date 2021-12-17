@@ -1,4 +1,5 @@
 from game import *
+from men import *
 
 def newWord():
     global randomWord
@@ -14,7 +15,7 @@ def newWord():
         
 newWord()
 welcomePlayer()
-
+man1()
 gameState = True
 while gameState:
     runGame(randomWord, word, blank)
@@ -29,8 +30,3 @@ while gameState:
 print("\nENDING: ")
 print(randomWord)
 print(blank)
-
-
-
-
-
