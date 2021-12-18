@@ -1,6 +1,7 @@
 import requests
 import random
 import os
+from men import *
 
 def clearScreen(): #literal among us god
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -34,6 +35,7 @@ def runGame(randomWord, word, blank): #ask the user for input 6 times. each time
         if(ranCheck == False):
             deathCheck = deathCheck + 1
         ranCheck = False
+        man1()
         print(*blank, sep=" ")    
         print("Death Check: " + str(deathCheck))
 
