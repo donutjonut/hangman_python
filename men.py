@@ -9,7 +9,7 @@ def man1(): #dababy
 def man2(): #dababy1
     amongUs1 = [' ', 'O', ' ']
     amongUs2 = ['\\', '|', '/']
-    amongUs3 = ['/', ' ', '\\']
+    amongUs3 = [' ', ' ', '\\']
     print(*amongUs1, sep="")
     print(*amongUs2, sep="")
     print(*amongUs3, sep="")
@@ -17,31 +17,31 @@ def man2(): #dababy1
 def man3(): #dababy2
     amongUs1 = [' ', 'O', ' ']
     amongUs2 = ['\\', '|', '/']
-    amongUs3 = ['/', ' ', '\\']
+    amongUs3 = [' ', ' ', ' ']
     print(*amongUs1, sep="")
     print(*amongUs2, sep="")
     print(*amongUs3, sep="")
 
 def man4(): #dababy3
     amongUs1 = [' ', 'O', ' ']
-    amongUs2 = ['\\', '|', '/']
-    amongUs3 = ['/', ' ', '\\']
+    amongUs2 = [' ', '|', '/']
+    amongUs3 = [' ', ' ', ' ']
     print(*amongUs1, sep="")
     print(*amongUs2, sep="")
     print(*amongUs3, sep="")
 
 def man5(): #dababy4
     amongUs1 = [' ', 'O', ' ']
-    amongUs2 = ['\\', '|', '/']
-    amongUs3 = ['/', ' ', '\\']
+    amongUs2 = [' ', '|', ' ']
+    amongUs3 = [' ', ' ', ' ']
     print(*amongUs1, sep="")
     print(*amongUs2, sep="")
     print(*amongUs3, sep="")
 
 def man6(): #dababy5
     amongUs1 = [' ', 'O', ' ']
-    amongUs2 = ['\\', '|', '/']
-    amongUs3 = ['/', ' ', '\\']
+    amongUs2 = [' ', ' ', ' ']
+    amongUs3 = [' ', ' ', ' ']
     print(*amongUs1, sep="")
     print(*amongUs2, sep="")
     print(*amongUs3, sep="")
@@ -51,17 +51,17 @@ def makeMen(deaths): #temp lol
     if deaths == 0:
         man1()
     elif deaths == 1:
-        man1()
+        man2()
     elif deaths == 2:
-        man1()
+        man2()
     elif deaths == 3:
-        man1()
+        man3()
     elif deaths == 4:
-        man1()
+        man4()
     elif deaths == 5:
-        man1()
+        man5()
     elif deaths == 6:
-        man1()
+        man6()
     else:
         man1()
 

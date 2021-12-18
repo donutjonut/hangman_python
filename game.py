@@ -41,7 +41,7 @@ def runGame(randomWord, word, blank): #ask the user for input 6 times. each time
 
 def welcomePlayer():
     clearScreen()
-    print("Welcome to Hangman!")
+    print("\033[1mWelcome to hangman!!\033[0m")
     gameStart = input("Press enter to start a game or type exit to quit ").lower()
     if gameStart == "exit" or gameStart == "q" or gameStart == "quit":
         exit()

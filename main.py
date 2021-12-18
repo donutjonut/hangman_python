@@ -18,6 +18,8 @@ gameState = True
 while gameState:
     runGame(randomWord, word, blank)
     clearScreen()
+    print("\033[1mGAME OVER!\033[0m")
+    makeMen(6)
     stateChanger = input("Would you like to play again? ").lower()
     if (stateChanger == "yes"):
         newWord()
