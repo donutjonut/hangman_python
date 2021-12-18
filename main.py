@@ -4,10 +4,8 @@ from men import *
 def newWord():
     global randomWord
     randomWord = generateWord()
-    #store the word as an array 
     global word
     word = list(randomWord)
-    #create an array of "_" with the same length as the word
     global blank
     blank = []
     for i in range(len(word)):
