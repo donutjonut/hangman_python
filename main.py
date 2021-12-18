@@ -22,7 +22,8 @@ while gameState:
     clearScreen()
     stateChanger = input("Would you like to play again? ").lower()
     if (stateChanger == "yes"):
-        newWord()man1()
+        newWord()
+        man1()
         clearScreen()
         makeMen(0)
     elif(stateChanger == "no"):

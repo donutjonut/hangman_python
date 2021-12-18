@@ -35,7 +35,7 @@ def runGame(randomWord, word, blank): #ask the user for input 6 times. each time
         if(ranCheck == False):
             deathCheck = deathCheck + 1
         ranCheck = False
-        man1()
+        makeMen(deathCheck)
         print(*blank, sep=" ")    
         print("Death Check: " + str(deathCheck))
 

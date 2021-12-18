@@ -6,3 +6,6 @@ def man1(): #dababy
     print(*amongUs2, sep="")
     print(*amongUs3, sep="")
 
+def makeMen(deaths):
+    man1()
+
