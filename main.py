@@ -15,15 +15,16 @@ def newWord():
         
 newWord()
 welcomePlayer()
-man1()
+makeMen(0)
 gameState = True
 while gameState:
     runGame(randomWord, word, blank)
     clearScreen()
     stateChanger = input("Would you like to play again? ").lower()
     if (stateChanger == "yes"):
-        newWord()
+        newWord()man1()
         clearScreen()
+        makeMen(0)
     elif(stateChanger == "no"):
         gameState = False
 
