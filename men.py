@@ -46,6 +46,14 @@ def man6(): #dababy5
     print(*amongUs2, sep="")
     print(*amongUs3, sep="")
 
+def man7(): #dababy6
+    amongUs1 = ['\\', ' ', '/']
+    amongUs2 = [' ', 'X', ' ']
+    amongUs3 = ['/', ' ', '\\']
+    print(*amongUs1, sep="")
+    print(*amongUs2, sep="")
+    print(*amongUs3, sep="")
+
 
 def makeMen(deaths): #temp lol 
     if deaths == 0:
@@ -62,6 +70,8 @@ def makeMen(deaths): #temp lol
         man5()
     elif deaths == 6:
         man6()
-    else:
+    elif deaths == 7:
+        man7()
+    else: 
         man1()
 

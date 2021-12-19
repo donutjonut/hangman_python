@@ -24,7 +24,7 @@ def runGame(randomWord, word, blank): #ask the user for input 6 times. each time
     deathCheck = 0
     ranCheck = False
     print(*blank, sep=" ") 
-    while(deathCheck < 6):
+    while(deathCheck <= 6):
         check = input("What is your letter? ").lower()
         clearScreen()
         print("Entered Letter: " + check) #monkeeyyyyyy as LMAO
