@@ -74,4 +74,3 @@ def makeMen(deaths): #monkey ass lmao
         man7()
     else: 
         man1()
-
