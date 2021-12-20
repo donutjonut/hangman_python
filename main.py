@@ -19,16 +19,13 @@ while gameState:
     runGame(randomWord, word, blank)
     clearScreen()
     print("\033[1mGAME OVER!\033[0m")
+    print("The word was: " + randomWord)
     makeMen(7)
     stateChanger = input("Would you like to play again? ").lower()
-    if (stateChanger == "yes"):
+    if (stateChanger == "yes" or stateChanger == "y"):
         newWord()
         man1()
         clearScreen()
         makeMen(0)
-    elif(stateChanger == "no"):
+    elif(stateChanger == "no" or stateChanger == "n"):
         gameState = False
-
-print("\nENDING: ")
-print(randomWord)
-print(blank)

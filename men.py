@@ -55,7 +55,7 @@ def man7(): #dababy6
     print(*amongUs3, sep="")
 
 
-def makeMen(deaths): #temp lol 
+def makeMen(deaths): #monkey ass lmao
     if deaths == 0:
         man1()
     elif deaths == 1:
